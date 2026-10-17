@@ -234,7 +234,7 @@ with tab1:
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(0,0,0,0)",
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, theme="streamlit", config={"displayModeBar": False, "responsive": True})
     with col_b:
         st.subheader("Бір абзацта")
         st.markdown(
@@ -330,7 +330,7 @@ with tab2:
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
     )
-    st.plotly_chart(fig_mc, use_container_width=True)
+    st.plotly_chart(fig_mc, use_container_width=True, theme="streamlit", config={"displayModeBar": False, "responsive": True})
 
     with st.expander("Толық статистика"):
         st.dataframe(
@@ -397,7 +397,7 @@ with tab3:
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
     )
-    st.plotly_chart(fig_ml, use_container_width=True)
+    st.plotly_chart(fig_ml, use_container_width=True, theme="streamlit", config={"displayModeBar": False, "responsive": True})
 
     m1, m2 = st.columns([1, 2])
     with m1:
@@ -453,7 +453,7 @@ with tab4:
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
     )
-    st.plotly_chart(fig_s, use_container_width=True)
+    st.plotly_chart(fig_s, use_container_width=True, theme="streamlit", config={"displayModeBar": False, "responsive": True})
     st.markdown(
         '<div class="ok-box">Тіпті <b>пессимистік</b> нұсқада да NPV оң — жоба тәуекелге төзімді.</div>',
         unsafe_allow_html=True,
